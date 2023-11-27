@@ -20,12 +20,11 @@ public class DemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... arg0) throws Exception {
 
-		Course course = repository.findById(10001L);
+		repository.playWithEntityManager();
 
-		logger.info("Course 10001 -> {}", course);
-
+		/*logger.info("Course 10001 -> {}", course);
 		repository.deleteById(10002L);
-
 		repository.save(new Course("Microsoft"));
+		 */
 	}
 }
